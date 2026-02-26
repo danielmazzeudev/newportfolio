@@ -1,8 +1,4 @@
-'use client';
-
-import styled from 'styled-components';
-
-export const main = styled.main`
+.main {
     width: 100%;
     min-height: 100vh;
     margin: 0 auto;
@@ -12,20 +8,21 @@ export const main = styled.main`
     gap: 100px;
     background-color: #ffffff;
     background-image: radial-gradient(#e5e5e5 1px, transparent 1px);
-    background-size: 40px 40px; 
+    background-size: 40px 40px;
     color: #000;
-`;
+    box-sizing: border-box;
+}
 
-export const section = styled.section`
+.section {
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-`;
+}
 
-export const name = styled.h1`
+.name {
     font-size: clamp(4rem, 12vw, 8rem);
     line-height: 0.8;
     letter-spacing: -0.05em;
@@ -33,13 +30,15 @@ export const name = styled.h1`
     margin-bottom: 24px;
     text-transform: uppercase;
     color: #000;
-  
-    @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
+    .name {
         letter-spacing: -0.02em;
     }
-`;
+}
 
-export const presentation = styled.p`
+.presentation {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #666;
@@ -48,9 +47,9 @@ export const presentation = styled.p`
     border-left: 2px solid #000;
     padding-left: 20px;
     margin-left: 5px;
-`;
+}
 
-export const grid = styled.div`
+.grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 1px;
@@ -59,9 +58,9 @@ export const grid = styled.div`
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
-`;
+}
 
-export const card = styled.div`
+.card {
     background: #fff;
     padding: 40px;
     display: flex;
@@ -70,49 +69,59 @@ export const card = styled.div`
     transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     position: relative;
     overflow: hidden;
+}
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0%;
-        height: 4px;
-        background: #000;
-        transition: width 0.4s ease;
-    }
+.card:hover {
+    background: #fafafa;
+    z-index: 2;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+}
 
-    &:hover::before {
-        width: 100%;
-    }
-`;
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: #000;
+    transition: width 0.4s ease;
+}
 
-export const cardTitle = styled.h2`
+.card:hover::before {
+    width: 100%;
+}
+
+.card-title {
     font-size: 1.4rem;
     font-weight: 800;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-`;
+    margin: 0;
+}
 
-export const cardText = styled.p`
+.card-text {
     font-size: 0.95rem;
     line-height: 1.7;
     color: #888;
     font-weight: 400;
-`;
+    margin: 0;
+}
 
-export const cardTags = styled.div`
+.card-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-`;
+    margin-top: auto;
+}
 
-export const cardTag = styled.span`
+.card-tag {
     font-size: 10px;
+    font-weight: 700;
     text-transform: uppercase;
-    padding: 8px;
+    padding: 6px 10px;
     background: #f0f0f0;
     color: #000;
-    border-radius: 8px;
+    border-radius: 4px;
     letter-spacing: 1px;
-`;
+}

@@ -1,64 +1,68 @@
-import * as styled from './Main.styles';
+import './Main.styles.css';
 
 export default function Main() {
     return (
-        <styled.main>
+        <main className="main-container">
 
-            <styled.section>
-                <styled.name>Daniel Mazzeu</styled.name>
-                <styled.presentation>Desenvolvedor Full Stack proativo, focado em resolver desafios complexos através de tecnologia e inovação. Minha missão é evoluir constantemente para entregar experiências digitais excepcionais, unindo performance no back-end e elegância no front-end.</styled.presentation>
-            </styled.section>
+            <section className="section">
+                <h1 className="name">Daniel Mazzeu</h1>
+                <p className="presentation">
+                    Desenvolvedor Full Stack proativo, focado em resolver desafios complexos através de tecnologia e inovação. 
+                    Minha missão é evoluir constantemente para entregar experiências digitais excepcionais, 
+                    unindo performance no back-end e elegância no front-end.
+                </p>
+            </section>
 
-            <styled.section>
-                <styled.grid>
+            <section className="section">
+                <div className="grid">
 
-                    <styled.card>
-                        <styled.cardTitle>Front-end</styled.cardTitle>
-                        <styled.cardText>Design, elegância, mas além de tudo responsividade e funcionalidade, precisa ser agradável e informativo.</styled.cardText>
-                        <styled.cardTags>
-                            <styled.cardTag>Html5</styled.cardTag>
-                            <styled.cardTag>Css3</styled.cardTag>
-                            <styled.cardTag>Javascript</styled.cardTag>
-                            <styled.cardTag>React.Js</styled.cardTag>
-                            <styled.cardTag>Next.Js</styled.cardTag>
-                            <styled.cardTag>React Native</styled.cardTag>
-                        </styled.cardTags>
-                    </styled.card>
+                    <div className="card">
+                        <h2 className="card-title">Front-end</h2>
+                        <p className="card-text">Design, elegância, mas além de tudo responsividade e funcionalidade, precisa ser agradável e informativo.</p>
+                        <div className="card-tags">
+                            <span className="card-tag">Html5</span>
+                            <span className="card-tag">Css3</span>
+                            <span className="card-tag">Javascript</span>
+                            <span className="card-tag">React.Js</span>
+                            <span className="card-tag">Next.Js</span>
+                            <span className="card-tag">React Native</span>
+                        </div>
+                    </div>
 
-                    <styled.card>
-                        <styled.cardTitle>Back-end</styled.cardTitle>
-                        <styled.cardText>Pensamento sempre na manutenção e implementação de futuras novas funcionalidades, o código precisa ser clean.</styled.cardText>
-                        <styled.cardTags>
-                            <styled.cardTag>Node.Js</styled.cardTag>
-                            <styled.cardTag>Python</styled.cardTag>
-                            <styled.cardTag>PHP</styled.cardTag>
-                            <styled.cardTag>MySQL</styled.cardTag>
-                            <styled.cardTag>PostgreSQL</styled.cardTag>
-                            <styled.cardTag>SQL Server</styled.cardTag>
-                        </styled.cardTags>
-                    </styled.card>
+                    <div className="card">
+                        <h2 className="card-title">Back-end</h2>
+                        <p className="card-text">Pensamento sempre na manutenção e implementação de futuras novas funcionalidades, o código precisa ser clean.</p>
+                        <div className="card-tags">
+                            <span className="card-tag">Node.Js</span>
+                            <span className="card-tag">Python</span>
+                            <span className="card-tag">PHP</span>
+                            <span className="card-tag">MySQL</span>
+                            <span className="card-tag">PostgreSQL</span>
+                            <span className="card-tag">SQL Server</span>
+                        </div>
+                    </div>
 
-                    <styled.card>
-                        <styled.cardTitle>Utilidades</styled.cardTitle>
-                        <styled.cardText>Alguns conhecimentos auxiliam tanto no front-end quanto no back-end, estes são os que diferenciam um profissional dos demais.</styled.cardText>
-                        <styled.cardTags>
-                            <styled.cardTag>TypeScript</styled.cardTag>
-                            <styled.cardTag>Git / GitHub</styled.cardTag>
-                            <styled.cardTag>Firebase</styled.cardTag>
-                            <styled.cardTag>Vercel</styled.cardTag>
-                            <styled.cardTag>Supabase</styled.cardTag>
-                            <styled.cardTag>Scrum & Kanban</styled.cardTag>
-                            <styled.cardTag>Tailwind Css</styled.cardTag>
-                            <styled.cardTag>Configurações DNS</styled.cardTag>
-                            <styled.cardTag>Configurações SMTP</styled.cardTag>
-                            <styled.cardTag>Configuração de ambiente</styled.cardTag>
-                            <styled.cardTag>SEO</styled.cardTag>
-                        </styled.cardTags>
-                    </styled.card>
+                    <div className="card">
+                        <h2 className="card-title">Utilidades</h2>
+                        <p className="card-text">Alguns conhecimentos auxiliam tanto no front-end quanto no back-end, estes são os que diferenciam um profissional dos demais.</p>
+                        <div className="card-tags">
+                            <span className="card-tag">TypeScript</span>
+                            <span className="card-tag">Git / GitHub</span>
+                            <span className="card-tag">Firebase</span>
+                            <span className="card-tag">Vercel</span>
+                            <span className="card-tag">Supabase</span>
+                            <span className="card-tag">Scrum & Kanban</span>
+                            <span className="card-tag">Tailwind Css</span>
+                            <span className="card-tag">Configurações DNS</span>
+                            <span className="card-tag">Configurações SMTP</span>
+                            <span className="card-tag">Configuração de ambiente</span>
+                            <span className="card-tag">SEO</span>
+                        </div>
+                    </div>
 
-                </styled.grid>
-            </styled.section>
+                </div>
+            </section>
 
-        </styled.main>
+        </main>
     );
 }
