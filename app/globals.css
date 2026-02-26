@@ -34,7 +34,7 @@ body {
     background-image: radial-gradient(
         circle at 100% 0%, 
         rgba(0, 255, 204, 0.1) 0%, 
-        rgba(0, 255, 204, 0.05) 30%, 
+        rgba(0, 255, 204, 0.05) 50%, 
         transparent 100%
     );
     background-attachment: fixed;
@@ -64,7 +64,7 @@ textarea::-webkit-scrollbar-thumb:hover { background: #fff; }
         background-image: radial-gradient(
             circle at 100% 0%, 
             rgba(0, 255, 204, 0.05) 0%, 
-            rgba(0, 255, 204, 0.05) 10%, 
+            rgba(0, 255, 204, 0.05) 5%, 
             transparent 100%
         );
     }
