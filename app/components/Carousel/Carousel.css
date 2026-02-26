@@ -28,14 +28,16 @@ div.carousel > div.group > div {
     width: fit-content;
     min-width: 150px;
     padding: 10px 20px;
+    border: 1px solid rgba(0, 255, 204, 0.4);
     border-radius: 10px;
-    background-color: #fff;
+    background-color: rgba(0, 255, 204, 0.05);
 }
 
 div.carousel > div.group > div > img {
     width: auto;
     height: 30px;
     object-fit: content;
+    filter: invert(72%) sepia(81%) saturate(1915%) hue-rotate(119deg) brightness(105%) contrast(106%);
     image-rendering: optimizeQuality;
 }
 
