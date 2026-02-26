@@ -26,11 +26,11 @@ body { overflow-x: hidden !important; }
 html { scroll-behavior: smooth; }
 
 body { 
-    padding: 30px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    background-color: #fff; 
+    gap: 50px;
+    background-color: #000; 
 }
 
 ::-webkit-scrollbar { width: 7px; }
