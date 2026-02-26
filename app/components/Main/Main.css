@@ -21,7 +21,7 @@
 .name {
     padding-left: 14px;
     margin-bottom: 14px;
-    font-size: clamp(4rem, 4vw, 8rem);
+    font-size: clamp(3rem, 12vw, 3rem);
     line-height: 0.8;
     font-weight: 900;
     letter-spacing: -0.05em;
@@ -88,6 +88,6 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #00ffcc;
-    background: rgba(0, 255, 204, 0.05);
+    background-color: rgba(0, 255, 204, 0.05);
     
 }
