@@ -41,15 +41,6 @@ div.carousel > div.group > div > img {
     image-rendering: optimizeQuality;
 }
 
-div.carousel > div.group > div:hover {
-    background-color: #fff;
-}
-
-div.carousel > div.group > div:hover > img {
-    opacity: 1;
-    filter: invert(0%) grayscale(0%);
-}
-
 div.carousel > div.group > div:last-child {
     margin-right: 15px;
 }
