@@ -61,14 +61,17 @@ export default function Main() {
                     <div className="card">
                         <h2 className="card-title">Projeto<br/>JSON Generator</h2>
                         <p className="card-text">Gere estruturas complexas instantaneamente usando IA. Ferramenta ideal para criar mocks e esquemas de dados.</p>
+                        <a className='card-link' href='' target=''>Acessar</a>
                     </div>
                     <div className="card">
                         <h2 className="card-title">Projeto<br/>Nepbot</h2>
                         <p className="card-text">Agente de IA responsável por direcionar novos clientes da empresa Neppo para seus canais de atentimento.</p>
+                        <a className='card-link' href='' target=''>Acessar</a>
                     </div>
                     <div className="card">
                         <h2 className="card-title">Projeto<br/>Pokemon Data API</h2>
                         <p className="card-text">Explore o universo Pokémon através desta aplicação que demonstra consumo de APIs REST e exibição estruturada de dados.</p>
+                        <a className='card-link' href='' target=''>Acessar</a>
                     </div>
                 </div>
             </section>
