@@ -51,22 +51,8 @@ textarea::-webkit-scrollbar-thumb:hover { background: #fff; }
 @media (max-width: 768px) {
     body {
         padding: 30px;
-        background-image: radial-gradient(
-            circle at 100% 0%, 
-            rgba(0, 255, 204, 0.5) 10%, 
-            transparent 60%
-        );
-        background-image: radial-gradient(
-            circle at 100% 0%, 
-            rgba(0, 255, 204, 0.05) 0%, 
-            rgba(0, 255, 204, 0.05) 10%, 
-            transparent 100%
-        );
     }
 }
-
-
-
 
 #dataCanvas {
     position: fixed;
@@ -74,7 +60,7 @@ textarea::-webkit-scrollbar-thumb:hover { background: #fff; }
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: -1; /* Fica atrás de tudo */
-    opacity: 0.15; /* Deixe baixo para não cansar a vista */
+    z-index: -1;
+    opacity: 0.15;
     pointer-events: none;
 }
