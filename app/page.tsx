@@ -59,7 +59,7 @@ export default function Home() {
     return (
         <>
             <canvas ref={canvasRef} id="dataCanvas"></canvas>
-            {/* <Header /> */}
+            <Header />
             <Main />
             {/* <Footer /> */}
         </>
