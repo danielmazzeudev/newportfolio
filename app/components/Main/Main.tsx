@@ -4,6 +4,15 @@ export default function Main() {
     return (
         <main className="main">
 
+            <div className="data-stream">
+                <span>010110101011010</span>
+                <span>DATA_SYSTEM_OK</span>
+                <span>1100101011</span>
+                <span>REBOOTING...</span>
+                <span>0011001100</span>
+                <span>ENCRYPTING_NODE</span>
+            </div>
+
             <section className="section">
                 <h1 className="name">Daniel Mazzeu</h1>
                 <p className="presentation">
