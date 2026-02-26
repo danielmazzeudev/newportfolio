@@ -38,15 +38,15 @@ body {
 ::-webkit-scrollbar-track,
 ::-webkit-scrollbar-thumb { border-radius: 7px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: #333; }
-::-webkit-scrollbar-thumb:hover {  background: #fff; }
+::-webkit-scrollbar-thumb { background: #0a0a0a; }
+::-webkit-scrollbar-thumb:hover {  background: #00ffcc; }
 
 textarea::-webkit-scrollbar { width: 7px; }
 textarea::-webkit-scrollbar-track,
 textarea::-webkit-scrollbar-thumb { border-radius: 7px; }
 textarea::-webkit-scrollbar-track { background: transparent; }
-textarea::-webkit-scrollbar-thumb { background: #333; }
-textarea::-webkit-scrollbar-thumb:hover { background: #fff; }
+textarea::-webkit-scrollbar-thumb { background: #0a0a0a; }
+textarea::-webkit-scrollbar-thumb:hover { background: #00ffcc; }
 
 @media (max-width: 768px) {
     body {

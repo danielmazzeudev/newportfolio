@@ -4,7 +4,7 @@ export default function Main() {
     return (
         <main className="main">
             <section className="section">
-                <h1 className="name">Daniel Mazzeu</h1>
+                <h1 className="name">Daniel<br/>Mazzeu</h1>
                 <p className="presentation">
                     Desenvolvedor Full Stack proativo, focado em resolver desafios complexos através de tecnologia e inovação. 
                     Minha missão é evoluir constantemente para entregar experiências digitais excepcionais, 
@@ -52,6 +52,23 @@ export default function Main() {
                             <span className="card-tag">Tailwind Css</span>
                             <span className="card-tag">SEO</span>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="section">
+                <div className="grid">
+                    <div className="card">
+                        <h2 className="card-title">Projeto<br/>JSON Generator</h2>
+                        <p className="card-text">Gere estruturas complexas instantaneamente usando IA. Ferramenta ideal para criar mocks e esquemas de dados.</p>
+                    </div>
+                    <div className="card">
+                        <h2 className="card-title">Projeto<br/>Nepbot</h2>
+                        <p className="card-text">Agente de IA responsável por direcionar novos clientes da empresa Neppo para seus canais de atentimento.</p>
+                    </div>
+                    <div className="card">
+                        <h2 className="card-title">Projeto<br/>Pokemon Data API</h2>
+                        <p className="card-text">Explore o universo Pokémon através desta aplicação que demonstra consumo de APIs REST e exibição estruturada de dados.</p>
                     </div>
                 </div>
             </section>
