@@ -1,5 +1,6 @@
 import { Link2 } from 'lucide-react';
 import './Main.css';
+import Carousel from '../Carousel/Carousel';
 
 export default function Main() {
     return (
@@ -13,6 +14,8 @@ export default function Main() {
                     unindo performance no back-end e elegância no front-end.
                 </p>
             </section>
+
+            <Carousel />
 
             <section className="section">
                 <div className="grid">
@@ -48,11 +51,13 @@ export default function Main() {
                         <div className="card-tags">
                             <span className="card-tag">TypeScript</span>
                             <span className="card-tag">Git / GitHub</span>
+                            <span className="card-tag">n8n</span>
                             <span className="card-tag">Firebase</span>
                             <span className="card-tag">Vercel</span>
                             <span className="card-tag">Supabase</span>
                             <span className="card-tag">Tailwind Css</span>
                             <span className="card-tag">SEO</span>
+                            <span className="card-tag">Google Ads</span>
                         </div>
                     </div>
                 </div>
