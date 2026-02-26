@@ -51,6 +51,9 @@ div.carousel > div.group > div:last-child {
 }
 
 @media (max-width: 768px) {
+    div.carousel {
+        overflow-x: visible;
+    }
     div.carousel > div.group > div {
         min-width: 100px;
         padding: 10px 20px;
