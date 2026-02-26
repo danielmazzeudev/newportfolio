@@ -26,8 +26,7 @@
 
 .subtitle {
     margin-bottom: 14px;
-    font-size: clamp(1.2rem, 10vw, 1rem);
-    font-weight: 300;
+    font-size: 1.2rem;
     line-height: 1;
     letter-spacing: 10px;
     text-transform: uppercase;
@@ -91,7 +90,6 @@
 }
 
 @media (max-width: 768px) {
-    .name {
-        letter-spacing: -0.02em;
-    }
+    .name { letter-spacing: -0.02em; }
+    .subtitle { font-size: 0.9rem; }
 }
