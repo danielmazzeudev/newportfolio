@@ -58,3 +58,13 @@ div.carousel > div.group > div:last-child {
     from { translate: 0; }
     to { translate: -100%; }
 }
+
+@media (max-width: 768px) {
+    div.carousel > div.group > div {
+        min-width: 100px;
+        padding: 10px 20px;
+    }
+    div.carousel > div.group > div > img {
+        height: 30px;
+    }
+}
