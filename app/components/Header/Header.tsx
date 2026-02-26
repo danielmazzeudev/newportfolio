@@ -4,7 +4,7 @@ import './Header.css';
 
 export default function Header() {
     return (
-        <header className="header">
+        <header>
             <section className="section">
                 <h1 className="name">Daniel<br/>Mazzeu</h1>
                 <span className="subtitle">{`<full-stack dev />`}</span>

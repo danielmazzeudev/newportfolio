@@ -1,4 +1,4 @@
-.header {
+header {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -7,9 +7,35 @@
     gap: 50px;
 }
 
-.section {
+header .section {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+header .name {
+    margin-bottom: 14px;
+    font-size: clamp(3rem, 12vw, 3rem);
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+header .subtitle {
+    margin-bottom: 14px;
+    font-size: 1.2rem;
+    line-height: 1;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: #00ffcc;
+}
+
+header .presentation {
+    max-width: 500px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #999;
 }
