@@ -1,7 +1,5 @@
 import './Main.css';
 
-export const dynamic = 'force-dynamic';
-
 export default function Main() {
     return (
         <main className="main-container">
