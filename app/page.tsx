@@ -30,7 +30,7 @@ export default function Home() {
         const rainDrops = Array(columns).fill(1);
 
         const draw = () => {
-            ctx.fillStyle = 'rgba(10, 10, 10, 0.04)'; 
+            ctx.fillStyle = 'rgba(10, 10, 10, 0.4)'; 
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             ctx.font = fontSize + 'px monospace';
 
@@ -38,7 +38,7 @@ export default function Home() {
                 const text = alphabet[Math.floor(Math.random() * alphabet.length)];
                 
                 const isBright = Math.random() > 0.98;
-                ctx.fillStyle = isBright ? '#ffffff' : '#00362c';
+                ctx.fillStyle = isBright ? '#fff' : '#00ffcc';
                 ctx.fillText(text, i * fontSize, rainDrops[i] * fontSize);
 
                 if (rainDrops[i] * fontSize > canvas.height && Math.random() > 0.975) {
@@ -48,7 +48,7 @@ export default function Home() {
             }
         };
 
-        const interval = setInterval(draw, 35);
+        const interval = setInterval(draw, 50);
 
         return () => {
             clearInterval(interval);
