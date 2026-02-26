@@ -2,7 +2,7 @@ import './Main.css';
 
 export default function Main() {
     return (
-        <main className="main-container">
+        <main className="main">
 
             <section className="section">
                 <h1 className="name">Daniel Mazzeu</h1>
