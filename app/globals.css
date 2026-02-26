@@ -74,63 +74,13 @@ textarea::-webkit-scrollbar-thumb:hover { background: #fff; }
 
 
 
-
-/* Container do fundo de dados */
-.data-stream {
+#dataCanvas {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: -1; /* Fica atrás de tudo */
-    overflow: hidden;
-    opacity: 0.15; /* Bem sutil para não atrapalhar o texto principal */
-    pointer-events: none; /* Não interfere nos cliques */
-    user-select: none;
-}
-
-.data-stream span {
-    position: absolute;
-    font-family: 'Courier New', monospace;
-    font-size: 14px;
-    color: #00ffcc;
-    white-space: nowrap;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    animation: stream linear infinite;
-}
-
-/* Criando colunas em posições diferentes e velocidades diferentes */
-.data-stream span:nth-child(1) { left: 5%; animation-duration: 15s; top: -100%; }
-.data-stream span:nth-child(2) { left: 25%; animation-duration: 25s; top: -120%; animation-delay: 2s; }
-.data-stream span:nth-child(3) { left: 45%; animation-duration: 20s; top: -150%; }
-.data-stream span:nth-child(4) { left: 65%; animation-duration: 30s; top: -110%; animation-delay: 5s; }
-.data-stream span:nth-child(5) { left: 85%; animation-duration: 18s; top: -130%; }
-.data-stream span:nth-child(6) { left: 95%; animation-duration: 22s; top: -140%; animation-delay: 1s; }
-
-@keyframes stream {
-    0% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    10% {
-        opacity: 1;
-    }
-    90% {
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(200vh); /* Faz o dado "atravessar" a tela toda */
-        opacity: 0;
-    }
-}
-
-/* No mobile, removemos algumas colunas para não poluir */
-@media (max-width: 768px) {
-    .data-stream span:nth-child(odd) {
-        display: none;
-    }
-    .data-stream {
-        opacity: 0.08; /* Mais discreto ainda no celular */
-    }
+    opacity: 0.15; /* Deixe baixo para não cansar a vista */
+    pointer-events: none;
 }

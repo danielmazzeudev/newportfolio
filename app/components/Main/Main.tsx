@@ -1,17 +1,67 @@
+'use client';
+
+import { useEffect, useRef } from 'react';
 import './Main.css';
 
 export default function Main() {
+    const canvasRef = useRef<HTMLCanvasElement>(null);
+
+    useEffect(() => {
+        const canvas = canvasRef.current;
+        if (!canvas) return; // Segurança contra o erro 'possibly null'
+
+        const ctx = canvas.getContext('2d');
+        if (!ctx) return;
+
+        const resize = () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        };
+
+        window.addEventListener('resize', resize);
+        resize();
+
+        // Mix de caracteres para volume: Katakana, Letras, Números e Símbolos
+        const chars = 'ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ#$+-*=%';
+        const alphabet = chars.split('');
+
+        const fontSize = 16;
+        const columns = Math.floor(canvas.width / fontSize);
+        const rainDrops = Array(columns).fill(1);
+
+        const draw = () => {
+            ctx.fillStyle = 'rgba(10, 10, 10, 0.04)'; 
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.font = fontSize + 'px monospace';
+
+            for (let i = 0; i < rainDrops.length; i++) {
+                const text = alphabet[Math.floor(Math.random() * alphabet.length)];
+                
+                const isBright = Math.random() > 0.98;
+                ctx.fillStyle = isBright ? '#ffffff' : '#00ffcc';
+                
+                ctx.fillText(text, i * fontSize, rainDrops[i] * fontSize);
+
+                if (rainDrops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    rainDrops[i] = 0;
+                }
+                rainDrops[i]++;
+            }
+        };
+
+        const interval = setInterval(draw, 35);
+
+        return () => {
+            clearInterval(interval);
+            window.removeEventListener('resize', resize);
+        };
+    }, []);
+
     return (
         <main className="main">
-
-            <div className="data-stream">
-                <span>010110101011010</span>
-                <span>DATA_SYSTEM_OK</span>
-                <span>1100101011</span>
-                <span>REBOOTING...</span>
-                <span>0011001100</span>
-                <span>ENCRYPTING_NODE</span>
-            </div>
+            {/* Elemento de fundo: Matrix */}
+            <canvas ref={canvasRef} id="dataCanvas"></canvas>
 
             <section className="section">
                 <h1 className="name">Daniel Mazzeu</h1>
@@ -24,7 +74,6 @@ export default function Main() {
 
             <section className="section">
                 <div className="grid">
-
                     <div className="card">
                         <h2 className="card-title">Front-end</h2>
                         <p className="card-text">Design, elegância, mas além de tudo responsividade e funcionalidade, precisa ser agradável e informativo.</p>
@@ -53,25 +102,19 @@ export default function Main() {
 
                     <div className="card">
                         <h2 className="card-title">Utilidades</h2>
-                        <p className="card-text">Alguns conhecimentos auxiliam tanto no front-end quanto no back-end, estes são os que diferenciam um profissional dos demais.</p>
+                        <p className="card-text">Conhecimentos auxiliares que diferenciam um profissional dos demais no mercado atual.</p>
                         <div className="card-tags">
                             <span className="card-tag">TypeScript</span>
                             <span className="card-tag">Git / GitHub</span>
                             <span className="card-tag">Firebase</span>
                             <span className="card-tag">Vercel</span>
                             <span className="card-tag">Supabase</span>
-                            <span className="card-tag">Scrum & Kanban</span>
                             <span className="card-tag">Tailwind Css</span>
-                            <span className="card-tag">Configurações DNS</span>
-                            <span className="card-tag">Configurações SMTP</span>
-                            <span className="card-tag">Configuração de ambiente</span>
                             <span className="card-tag">SEO</span>
                         </div>
                     </div>
-
                 </div>
             </section>
-
         </main>
     );
 }
