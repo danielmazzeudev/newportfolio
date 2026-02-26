@@ -74,11 +74,3 @@ main .card-link > svg {
     width: 14px;
     height: auto;
 }
-
-@media (max-width: 768px) {
-    main .name { letter-spacing: -0.02em; }
-    main .subtitle { 
-        font-size: 0.9rem;
-        letter-spacing: 8px; 
-    }
-}
