@@ -1,5 +1,3 @@
-'use client';
-
 import * as styled from './Main.styles';
 
 export default function Main() {
