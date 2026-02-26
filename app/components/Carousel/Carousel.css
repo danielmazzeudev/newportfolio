@@ -41,7 +41,6 @@ div.carousel > div.group > div > img {
     width: auto;
     height: 30px;
     object-fit: cover;
-    filter: invert(1) grayscale(1) brightness(1);
     image-rendering: optimizeQuality;
 }
 
