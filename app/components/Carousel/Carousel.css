@@ -30,6 +30,11 @@ div.carousel > div.group > div {
     padding: 10px 20px;
     border: 1px solid rgba(0, 255, 204, 0.4);
     border-radius: 10px;
+    background-color: rgba(0, 255, 204, 0.05);
+    box-shadow: 
+        0 0 5px rgba(0, 255, 204, 0.2),
+        0 0 10px rgba(0, 255, 204, 0.2),
+        inset 0 0 5px rgba(0, 255, 204, 0.2);
    
 }
 
@@ -51,9 +56,6 @@ div.carousel > div.group > div:last-child {
 }
 
 @media (max-width: 768px) {
-    div.carousel {
-        overflow-x: visible;
-    }
     div.carousel > div.group > div {
         min-width: 100px;
         padding: 10px 20px;
