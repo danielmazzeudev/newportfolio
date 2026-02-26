@@ -64,7 +64,7 @@ textarea::-webkit-scrollbar-thumb:hover { background: #fff; }
         background-image: radial-gradient(
             circle at 100% 0%, 
             rgba(0, 255, 204, 0.1) 0%, 
-            rgba(0, 255, 204, 0.05) 20%, 
+            rgba(0, 255, 204, 0.05) 10%, 
             transparent 100%
         );
     }
