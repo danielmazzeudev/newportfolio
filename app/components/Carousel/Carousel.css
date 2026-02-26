@@ -36,7 +36,7 @@ div.carousel > div.group > div {
 div.carousel > div.group > div > img {
     width: auto;
     height: 30px;
-    object-fit: content;
+    object-fit: cover;
     filter: invert(72%) sepia(81%) saturate(1915%) hue-rotate(119deg) brightness(105%) contrast(106%);
     image-rendering: optimizeQuality;
 }
