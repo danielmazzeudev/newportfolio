@@ -65,6 +65,6 @@ div.carousel > div.group > div:last-child {
         padding: 10px 20px;
     }
     div.carousel > div.group > div > img {
-        height: 30px;
+        height: 25px;
     }
 }
